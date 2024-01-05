@@ -1,0 +1,48 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body{
+  background-color: #fff;
+  color: #000;
+  margin: 0 10rem;
+}
+
+a{
+  text-decoration: none;
+  color:#000;
+}
+
+.icons {
+  width: 100px;
+  height: 100px;
+}
+.custom-btn {
+  font-family: var(--font-alt);
+  font-weight: 600;
+  padding: 0.5rem;
+  border-radius: 7px;
+  color: #fff;
+  background: var(--color-blue);
+  font-size: 1.2rem;
+}
+
+.custom-btn:hover{
+  color: #f0f0f0;
+}
+
+
+@media screen and (max-width: 1250px){
+  body{
+    margin: 0 8rem;
+  }
+}
+
+@media screen and (max-width: 1050px){
+  body{
+    margin: 0;
+  }
+}

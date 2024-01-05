@@ -1,0 +1,165 @@
+.navbar {
+    background: var(--color-blue);
+    font-family: var(--font-family);
+    height: 80px;
+    width: auto;
+}
+
+.navbar-box{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+}
+
+.navbar-logo {
+    display: flex;
+    justify-content: start;
+    padding: 0.5rem 5rem;
+}
+
+.navbar-logo img{
+    width: 82px;
+    height: 66px;
+}
+
+.navbar-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.navbar-links a{
+    color: white;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+.navbar-tel{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: end;
+    padding: 0.5rem 2rem;
+}
+
+.line{
+    background: #fff;
+    width: 1px;
+    height: 55px;
+}
+
+.telefono {
+    color:#fff;
+    font-weight: 600;
+    padding-left: 0.5rem;
+}
+
+.text {
+    font-size: 0.7rem;
+}
+
+.burguer-menu {
+    margin: 1rem;
+    position: relative;
+    display: none;
+}
+.burguer-menu-container{
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    text-align: end;
+    background: var(--color-blue);
+    padding: 2rem;
+    position: absolute;
+    top: 40px;
+    right: 0;
+    margin-top: 1rem;
+    min-width: 210px;
+    border-radius: 5px;
+    box-shadow: 0 0 5 rgba(0, 0, 0, 0.2);
+}
+
+.burguer-menu-container p{
+    margin: 1rem 0;
+}
+
+.burguer-menu-container a{
+    color: #fff;
+}
+
+@media screen and (max-width: 1250px){
+    
+    
+    .navbar-logo {
+        padding: 0.5rem 3rem;
+    }
+    
+    .navbar-logo img{
+        width: 76px;
+        height: 66px;
+    }
+    
+    .navbar-links {
+        gap: 0.7rem;
+    }
+    
+    .navbar-links a{
+        font-size: 0.7rem;
+    }
+    
+    .navbar-tel{
+        padding: 0.5rem 1rem;
+    }
+    
+    .line{
+        background: #fff;
+        width: 1px;
+        height: 50px;
+    }
+    
+    .telefono {
+        font-size: 0.8rem;
+        font-weight: 400;
+    }
+    
+    .text {
+        font-size: 0.6rem;
+    }
+    
+}
+
+
+@media screen and (max-width: 1050px) {
+    
+    .navbar-logo {
+        padding: 0.5rem 2rem;
+    }
+    
+    .navbar-logo img{
+        width: 76px;
+        height: 66px;
+    }
+    .navbar-links, .navbar-tel{
+        display: none;
+    }
+
+    .navbar-box{
+        grid-template-columns: 6fr 1fr;
+    }
+    .burguer-menu{
+        display: flex;
+        margin: 0rem;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .navbar-logo {
+        padding: 0.5rem 1rem;
+    }
+    
+    .navbar-logo img{
+        width: 70px;
+        height: 60px;
+    }
+}

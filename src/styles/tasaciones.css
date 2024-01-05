@@ -1,0 +1,156 @@
+.tasaciones{
+    width: 100%;
+    height: 500px;
+    background-image: url("C:\Users\ariel\OneDrive\Escritorio\real_estate\real_estate\src\assets\cards\tasaciones.jpg");
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: row;
+} 
+
+
+
+
+.input-direccion{
+   width: 60%;
+   display: flex;
+   flex-direction: row;
+   align-items: flex-end;
+   justify-content: flex-end;
+   padding: 1.5rem;
+}
+
+.input-direccion input{
+    width: 50rem;
+    height: 5rem;
+}
+
+.input-direccion ::placeholder{
+    color: #8d8b8b;
+    font-family: var(--font-alt);
+    font-size: 20px;
+    font-style: italic;
+    font-weight: 800;
+    padding-left: 2rem;
+}
+
+
+.input-direccion button{
+    background: var(--color-blue);
+    width: 5rem;
+    height: 5rem;
+}
+
+.input-direccion img{
+    width: 50px;
+    height: 50px;
+}
+
+
+
+.text-aside{
+    width: 40%;
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0,0,0,0.4));
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    justify-content: center;
+    padding: 2rem;
+    gap: 1rem;
+}
+
+.text-aside h2{
+    max-width: 450px;
+    color: #FFF;
+    font-family: var(--font-alt);
+    font-size: 40px;
+    font-style: italic;
+    font-weight: 800;
+}
+
+.text-aside p{
+    max-width: 400px;
+    color: #FFF;
+    font-family: var(--font-alt);
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.text-aside .input-direccion{
+    display: none;
+}
+
+
+@media screen and (max-width: 1250px){
+    .text-aside h2{
+        font-size: 30px;
+    }
+
+    .text-aside p{
+        font-size: 18px;
+    }
+}
+
+
+@media screen and (max-width: 1050px){
+    .tasaciones {
+        margin: 2rem 0;
+    }
+    .input-direccion{
+        width: 50%;
+        padding: 1rem;
+    }
+
+    .input-direccion ::placeholder{
+        font-size: 16px;
+    }
+
+    .text-aside{
+        width: 50%;
+        padding: 1.5rem;
+    }
+
+    .text-aside h2{
+        font-size: 28px;
+    }
+
+    .text-aside p{
+        font-size: 16px;
+    }
+
+}
+
+
+@media screen and (max-width: 600px){
+    .tasaciones {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .input-direccion{
+        display: none;
+    }
+    .input-direccion{
+        width: 100%;
+    }
+
+    .text-aside{
+        width: 100%;
+        height: 85%;
+    }
+    
+
+    .input-direccion input{
+        width: 40rem;
+        height: 4rem;
+    }
+    .input-direccion button{
+        width: 5rem;
+        height: 4rem;
+    }
+    .text-aside .input-direccion{
+        display: flex;
+        padding-left: 0;
+    }
+
+}

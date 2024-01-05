@@ -1,0 +1,301 @@
+.footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 7rem;
+    padding: 1rem 0;
+}
+
+.footer-links {
+    display: flex;
+    flex-direction: row;
+    align-items: end;
+    justify-content: space-between;
+}
+
+.footer-servicios {
+    font-family: var(--font-family);
+}
+
+.footer-servicios h3{
+    margin-bottom: 1rem;
+}
+
+.servicios-links{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.servicios-links a{
+    font-size: 1rem;
+}
+
+
+.social{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.social h4{
+    font-family: var(--font-family);
+    margin-bottom: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.social-icons{
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+}
+
+.social-icons img{
+    width: 50px;
+    height: 50px;
+}
+
+.location{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.location img{
+    width: 100px;
+    height: 60;
+    margin-bottom: 0.2rem;
+}
+
+.location-p{
+    font-family: var(--font-family);
+    font-size: 0.7rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.location-dir{
+    margin-bottom: 0.5rem;
+}
+
+.location-dir p{
+    font-family: var(--font-family);
+    text-align: right;
+    font-weight: 600;
+}
+
+.location-links img{
+    width: 40px;
+    height: 40px;
+}
+
+.footer-line{
+    background: var(--color-blue);
+    height: 1px;
+    width: 100%;
+    margin: 2rem 0;
+}
+
+.footer-copy{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-arrow{
+    background: var(--color-blue);
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    padding: 0.5rem;
+    color: #fff;
+    margin-right: 10rem;
+}
+
+.footer-arrow:hover{
+    transform: scale(1.1);
+}
+
+.footer-text {
+    font-size: 0.8rem;
+    font-family: var(--font-family);
+    text-align: center;
+    max-width: 480px;
+}
+
+.copy{
+    font-size: 0.7rem;
+    font-family: var(--font-family);
+    font-weight: 600;
+}
+
+
+
+@media screen and (max-width: 1250px){
+
+    .footer{
+        margin-top: 5rem;
+    }
+    .footer-arrow{
+        width: 40px;
+        height: 40px;
+    }
+    
+    .footer-text {
+        max-width: 350px;
+    }
+}
+
+@media screen and (max-width: 1050px){
+    .footer{
+        padding: 1rem 1rem;
+    }
+    
+    .footer-servicios h3{
+        margin-bottom: 0.5rem;
+        font-size: 1rem;
+    }
+    
+    .servicios-links a{
+        font-size: 0.9rem;
+    }
+    
+    .social h4{
+        font-size: 0.9rem;
+    }
+    
+    .social-icons img{
+        width: 40px;
+        height: 40px;
+    }
+    
+    .location img{
+        width: 80px;
+        height: 50px;
+    }
+    
+    .location-p{
+        font-size: 0.6rem;
+    }
+
+    
+    .location-dir p{
+        font-size: 0.9rem;
+    }
+    
+    .location-links img{
+        width: 35px;
+        height: 35px;
+    }
+}
+
+@media screen and (max-width: 800px){
+    .footer-servicios h3{
+        font-size: 0.9rem;
+    }
+    
+    .servicios-links a{
+        font-size: 0.8rem;
+    }
+    
+    .social h4{
+        font-size: 0.8rem;
+        letter-spacing: normal;
+    }
+    
+    .social-icons img{
+        width: 35px;
+        height: 35px;
+    }
+    
+    .location img{
+        width: 70px;
+        height: 50px;
+    }
+    
+    .location-p{
+        font-size: 0.5rem;
+    }
+
+    
+    .location-dir p{
+        font-size: 0.8rem;
+    }
+    
+    .location-links img{
+        width: 30px;
+        height: 30px;
+    }
+
+    .footer-text{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 600px){
+    
+    .footer{
+        padding: 0.5rem;
+    }
+    .footer-links{
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer-servicios{
+        text-align: center;
+    }
+
+    .footer-servicios h3{
+        font-size: 1.5rem;
+        margin-bottom: 0.8rem;
+    }
+
+    .footer-servicios a{
+        font-size: 1.1rem;
+        font-weight: 600;
+    }
+
+    .servicios-links{
+        margin-bottom: 5rem;
+    }
+    
+
+    .social h4{
+        font-size: 1rem;
+    }
+
+    .social-icons img{
+        width: 45px;
+        height: 45px;
+    }
+
+    .location{
+        margin-top: 5rem;
+        align-items: center;
+    }
+    .location img{
+        width: 90px;
+        height: 60px;
+    }
+
+    .location-dir p{
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    .location-links img{
+        width: 40px;
+        height: 40px;
+    }
+
+    .footer-arrow{
+        margin: 0;
+    }
+
+    .copy{
+        font-size: 0.8rem;
+    }
+}
+   

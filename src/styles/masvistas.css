@@ -1,0 +1,101 @@
+.masvistas{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 3rem;
+}
+.masvistas h2{
+    font-family: var(--font-family);
+    font-size: 1.6rem;
+    margin: 2rem;
+}
+.grilla{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.mv-box{
+    width: auto;
+    height: auto;
+}
+
+.mv-box img{
+    width: 100%;
+    height: 300px;
+}
+
+.mv-description{
+    display: flex;
+    flex-direction: column;
+}
+
+.mv-description p{
+    font-family: var(--font-family) ;
+}
+
+
+.first-line{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 700;
+}
+
+.mv-description .line {
+    width: 100%;
+    height: 2px;
+    background: #000;
+}
+
+@media screen and (max-width: 1250px){
+    .grilla{
+        gap: 1.5rem;
+    }
+
+    .mv-box img{
+        max-height: 250px;
+    }
+}
+
+@media screen and (max-width: 1050px){
+    .grilla{
+        gap: 1.3rem;
+        margin: 1rem;
+    }
+    .mv-description p{
+        font-size: 0.8rem;
+    }
+}
+
+@media screen and (max-width: 800px){
+    .grilla{
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+    }
+
+    .mv-description p {
+        font-size: 0.7rem;
+    }
+    .masvistas h2{
+        font-size: 1.3rem;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .grilla{
+        grid-template-columns: 1fr;
+        margin: 0.5rem;
+    }
+
+    .masvistas h2{
+        font-size: 1.3rem;
+    }
+
+    .mv-description p{
+        font-size: 0.8rem;
+    }
+
+}

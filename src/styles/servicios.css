@@ -1,0 +1,154 @@
+.servicios{
+    background: var(--color-bg);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.servicios h2{
+    font-family: var(--font-family);
+    margin: 2rem;
+    font-size: 1.7rem;
+    font-weight: 700;
+    letter-spacing: -1px;
+}
+.servicios-contenedor {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    
+}
+
+.servicio{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 6rem;
+    cursor: pointer;
+}
+
+.servicio img{
+    width: 75px;
+}
+
+.servicio p{
+    color: #000;
+    text-align: center;
+    font-family: var(--font-alt);
+    font-size: 1rem;
+    max-width: 130px;
+}
+
+.servicio:hover {
+    transition: all .4s ease-in-out;
+    transform: scale(1.1);
+}
+
+.text-buttom {
+    margin-top: 3rem;
+    padding: 3rem;
+    line-height: 25px;
+    max-width: 1400px;
+}
+
+.text-buttom p{
+    text-align: justify;
+    font-family: var(--font-alt);
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+span{
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.text-buttom h3{
+    text-align: center;
+    margin-top: 0.5rem;
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-style: italic;
+}
+
+
+@media screen and (max-width: 1050px){
+    
+    .servicio{
+        padding: 1rem 2.5rem;
+    }
+    .servicios h2{
+        font-size: 1.5rem;
+    }
+
+    .servicio img{
+        width: 70px;
+    }
+
+    .servicios p{
+        font-size: 0.9rem;
+    }
+
+    .text-buttom {
+        margin-top: 2rem;
+        padding: 2rem;
+        line-height: 20px;
+    }
+    
+    .text-buttom p{
+        font-size: 1.1rem;
+        font-weight: 400;
+    }
+    
+    span{
+        font-weight: 600;
+    }
+    
+    .text-buttom h3{
+        font-size: 1.1rem;
+        margin-top: 0.5rem;
+        font-family: var(--font-family);
+        font-weight: 700;
+        font-style: italic;
+    }
+}
+
+@media screen and (max-width: 600px){
+    
+    .servicios h2{
+        margin: 1.4rem;
+        font-size: 1.3rem;
+    }
+    .servicio img{
+        width: 50px;
+    }
+
+    .servicios-contenedor {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .servicio {
+        padding: 1.5rem;
+        margin: 0 1rem;
+    }
+
+    .servicio p{
+        max-width: 120px;
+    }
+
+    .text-buttom {
+        margin-top: 0.5rem;
+        padding: 1rem;
+        text-align: center;
+    }
+    .text-buttom p, span{
+        font-family: var(--font-family);
+        font-size: 0.9rem;
+    }
+
+    .text-buttom h3 {
+        font-size: 1rem;
+        font-weight: 600;
+    }
+
+}

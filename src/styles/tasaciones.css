@@ -121,19 +121,40 @@
 
 }
 
+@media screen and (max-width: 800px){
+    .input-direccion{
+        display: flex;
+        flex-direction: row;
+        align-items: flex-end;
+        padding: 0;
+        margin: 1rem;
+        width: 50%;
+    }
+
+    .input-direccion input{
+        width: 90%;
+        height: 4rem;
+    }
+
+    .input-direccion button{
+        height: 4rem;
+    }
+
+    .input-direccion button img{
+        padding: 0.2rem;
+    }
+}
+
 
 @media screen and (max-width: 600px){
     .tasaciones {
         flex-direction: column;
         height: auto;
-        align-items: center;
+        margin: 0;
     }
 
     .input-direccion{
         display: none;
-    }
-    .input-direccion{
-        width: 100%;
     }
 
     .text-aside{
@@ -141,18 +162,31 @@
         height: 85%;
     }
     
-
-    .input-direccion input{
-        width: 40rem;
-        height: 4rem;
-    }
-    .input-direccion button{
-        width: 5rem;
-        height: 4rem;
-    }
     .text-aside .input-direccion{
         display: flex;
-        padding-left: 0;
+        flex-direction: row;
+        align-items: center;
+        padding: 0;
+        margin: 0;
+        width: 100%;
     }
 
+    .text-aside .input-direccion input{
+        height: 3rem;
+    }
+    .text-aside .input-direccion button{
+        width: 5rem;
+        height: 3.2rem;
+    }
+
+    .text-aside .input-direccion button img{
+        padding: 0.5rem;
+    }
+
+}
+
+@media screen and (max-width: 480px){
+    .input-direccion {
+        margin-left: 1.5rem;
+    }
 }

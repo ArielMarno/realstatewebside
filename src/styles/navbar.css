@@ -68,6 +68,7 @@
     margin: 1rem;
     position: relative;
     display: none;
+    cursor: pointer;
 }
 .burguer-menu-container{
     display: flex;

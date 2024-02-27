@@ -31,8 +31,13 @@
 
 .navbar-links a{
     color: white;
-    font-size: 0.8rem;
+    font-size: 0.7rem;
     font-weight: 600;
+}
+
+.navbar-links a:hover{
+    transition: all ease-in-out 5ms;
+    color: #c7c6c6;
 }
 
 .navbar-tel{
@@ -75,17 +80,24 @@
     top: 40px;
     right: 0;
     margin-top: 1rem;
-    min-width: 210px;
+    min-width: 150px;
     border-radius: 5px;
     box-shadow: 0 0 5 rgba(0, 0, 0, 0.2);
 }
 
 .burguer-menu-container p{
-    margin: 1rem 0;
+    margin: 0.5rem 0;
 }
 
 .burguer-menu-container a{
     color: #fff;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+.burguer-menu-container a:hover{
+    transition: all ease-in-out 5ms;
+    color: #c7c6c6;
 }
 
 @media screen and (max-width: 1250px){
@@ -149,11 +161,16 @@
     }
     .burguer-menu{
         display: flex;
-        margin: 0rem;
+        justify-content: flex-end;
+        margin: 1rem;
     }
 }
 
 @media screen and (max-width: 600px){
+
+    .navbar-links p a{
+        font-size: 0.9rem;
+    }
     .navbar-logo {
         padding: 0.5rem 1rem;
     }

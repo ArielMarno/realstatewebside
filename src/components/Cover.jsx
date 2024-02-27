@@ -3,7 +3,7 @@ import React from 'react'
 
 const Cover = () => {
   return (
-    <div className='inicio' id='inicio'>
+    <div className='inicio'>
         <div className='text-container'>
           <p>Casas - Departamentos - Duplex - Estancias</p>
         </div>

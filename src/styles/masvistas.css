@@ -97,5 +97,9 @@
     .mv-description p{
         font-size: 0.8rem;
     }
+    .mv-box img{
+        width: 100%;
+        height: auto;
+    }
 
 }

@@ -31,7 +31,9 @@ a{
 }
 
 .custom-btn:hover{
-  color: #f0f0f0;
+  transition: all ease-in-out 5ms;
+  background-color: #33405e;
+
 }
 
 

@@ -16,7 +16,7 @@ const Navbar = () => {
   const [toggleMenu, setToggleMenu] = useState(false);
 
   return (
-    <div className='navbar'>
+    <div className='navbar' id='nav'>
       <div className='navbar-box'>
         <div className='navbar-logo'>
           <img src={logo} alt="logo" />

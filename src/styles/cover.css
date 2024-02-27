@@ -1,5 +1,5 @@
 .inicio{
-    background-image: url("C:\Users\ariel\OneDrive\Escritorio\real_estate\real_estate\src\assets\cover.jpg");
+    background-image: url("src/assets/cover.jpg");
     background-position: center;
     background-size: cover;
     height: 521px;
@@ -10,7 +10,7 @@
 
 .text-container{
     width: 615px;
-    height: 101px;
+    height: 90px;
     display: flex;
     flex-direction: row;
     align-items: center;

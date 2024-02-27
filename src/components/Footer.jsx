@@ -65,9 +65,9 @@ const Footer = () => {
         <div className='footer-line'/>
 
         <div className='footer-copy'>
-          <a href="#inicio"><FaArrowUp className='footer-arrow'/></a>
+          <a href="#nav"><FaArrowUp className='footer-arrow'/></a>
           <p className='footer-text'>RealEstate es una empresa inmobiliaria de servicio completo de primer nivel en el país, que participa activamente en todas las fases de bienes raíces.</p>
-          <p className='copy'>© 2009-2023 RealEstate Bienes Raíces.</p>
+          <p className='copy'>© 2009-2024 RealEstate Bienes Raíces.</p>
         </div>
       </div>
 
